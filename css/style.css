@@ -11,6 +11,9 @@ body {
   min-height: 100vh;
   background-color: #23242a;
 }
+.box2 {
+  height: 540px !important;
+}
 .box {
   position: relative;
   width: 380px;
@@ -27,8 +30,14 @@ body {
   top: -50%;
   left: -50%;
   transform-origin: bottom right;
-  background: linear-gradient(0deg,transparent,
-  transparent ,#45f3ff,#45f3ff,#45f3ff);
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff
+  );
   z-index: 1;
   animation: animate 6s linear infinite;
 }
@@ -40,18 +49,24 @@ body {
   top: -50%;
   left: -50%;
   transform-origin: bottom right;
-  background: linear-gradient(0deg,transparent,
-  transparent ,#45f3ff,#45f3ff,#45f3ff);
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #45f3ff,
+    #45f3ff,
+    #45f3ff
+  );
   z-index: 1;
   animation: animate 6s linear infinite;
   animation-delay: -3s;
 }
-.border_Line{
+.border_Line {
   position: absolute;
   top: 0;
   inset: 0;
 }
-.border_Line::before{
+.border_Line::before {
   content: "";
   position: absolute;
   width: 380px;
@@ -59,13 +74,19 @@ body {
   top: -50%;
   left: -50%;
   transform-origin: bottom right;
-  background: linear-gradient(0deg,transparent,
-  transparent ,#ff2770,#ff2770,#ff2770);
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #ff2770,
+    #ff2770,
+    #ff2770
+  );
   z-index: 1;
   animation: animate 6s linear infinite;
   animation-delay: -1.5s;
 }
-.border_Line::after{
+.border_Line::after {
   content: "";
   position: absolute;
   width: 380px;
@@ -73,22 +94,25 @@ body {
   top: -50%;
   left: -50%;
   transform-origin: bottom right;
-  background: linear-gradient(0deg,transparent,
-  transparent ,#ff2770,#ff2770,#ff2770);
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #ff2770,
+    #ff2770,
+    #ff2770
+  );
   z-index: 1;
   animation: animate 6s linear infinite;
   animation-delay: -4.5s;
 }
-@keyframes animate 
-{
-  0%
-{
-  transform: rotate(0deg);
-}
-100%
-{
-  transform: rotate(360deg);
-}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .box form {
   position: absolute;
@@ -98,6 +122,7 @@ body {
   background: #222;
   padding: 50px 40px;
   border-radius: 8px;
+
   z-index: 2;
 }
 .box form h2 {
@@ -178,8 +203,22 @@ body {
   border: none;
   outline: none;
   padding: 9px 25px;
+  font-size: 17px;
+  display: flex;
+  justify-content: center;
   width: 100px;
   border-radius: 4px;
   margin-top: 10px;
   opacity: 0.5;
+}
+.alreadyAcount a:hover {
+  text-decoration: underline;
+}
+.alreadyAcount a {
+  color: grey;
+  text-decoration: none;
+}
+.alreadyAcount {
+  color: white;
+  margin: 10px 0;
 }

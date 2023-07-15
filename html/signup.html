@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logn In</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <div class="box">
+    <div class="box box2">
       <span class="border_Line"></span>
       <form>
-        <h2>Sign in</h2>
+        <h2>Sign up</h2>
         <div class="input_box">
           <input type="text" required="required" />
           <span>Username</span>
+          <i></i>
+        </div>
+        <div class="input_box">
+          <input type="text" required="required" />
+          <span>Email</span>
           <i></i>
         </div>
         <div class="input_box">
@@ -21,14 +26,13 @@
           <span>password</span>
           <i></i>
         </div>
-        <div class="links">
-          <a href="#">forgot password</a>
-          <a href="#">Signup</a>
+        <div class="input_box">
+          <input type="password" required="required" />
+          <span>confirm password</span>
+          <i></i>
         </div>
-        <input type="submit" value="Lognin" />
-        <span class="alreadyAcount"
-          >Don't Have acount? <a href="./html/signup.html">Signup</a></span
-        >
+        <input type="submit" value="Sign up" />
+        <span class="alreadyAcount">Already Have acount? <a href="../index.html"> Sign in</a></span>
       </form>
     </div>
   </body>
